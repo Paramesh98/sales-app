@@ -1,11 +1,11 @@
-import Image, { StaticImageData } from "next/image";
-import React from "react";
-import LeftBannerImage from "@/assets/jpg/left-banner-image.jpg";
 import RightBannerImage from "@/assets/jpg/baner-right-image-01.jpg";
 import RightBannerImage2 from "@/assets/jpg/baner-right-image-02.jpg";
 import RightBannerImage3 from "@/assets/jpg/baner-right-image-03.jpg";
 import RightBannerImage4 from "@/assets/jpg/baner-right-image-04.jpg";
+import LeftBannerImage from "@/assets/jpg/left-banner-image.jpg";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import "./styles.css";
 
 type Category = {
   title: string;

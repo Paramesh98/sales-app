@@ -1,9 +1,7 @@
-import React from "react";
 import Logo from "@/assets/jpg/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { MdArrowDropDown } from "react-icons/md";
-
+import "./styles.css";
 type Menu = {
   label: string;
   url: string;
@@ -15,7 +13,6 @@ function Header() {
     { label: "Home", url: "/" },
     { label: "About Us", url: "/about" },
     { label: "Products", url: "/products" },
-    // { label: "Kis's", url: "/kids" },
     {
       label: "Categories",
       url: "/products",
@@ -25,7 +22,10 @@ function Header() {
         { label: "Kids", url: "/products" },
       ],
     },
-    { label: "Contact Us", url: "/contact" },
+    {
+      label: "Contact Us",
+      url: "/contact",
+    },
   ];
 
   const MenuItem = ({ menu }: { menu: Menu }) => {

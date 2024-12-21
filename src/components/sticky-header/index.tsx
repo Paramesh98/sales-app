@@ -1,7 +1,3 @@
-import React from "react";
-import Logo from "@/assets/jpg/logo.png";
-import Image from "next/image";
-
 function StickyHeader({
   title,
   description,

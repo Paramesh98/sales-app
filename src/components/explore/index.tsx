@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ExploreImage1 from "@/assets/jpg/explore-image-01.jpg";
 import ExploreImage2 from "@/assets/jpg/explore-image-02.jpg";
+import "./styles.css";
 
 function Explore() {
   return (

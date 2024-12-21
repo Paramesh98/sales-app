@@ -1,4 +1,3 @@
-import React from "react";
 import AboutLeft from "@/assets/jpg/about-left-image.jpg";
 import Image from "next/image";
 
