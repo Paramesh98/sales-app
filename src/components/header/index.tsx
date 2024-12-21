@@ -2,8 +2,44 @@ import React from "react";
 import Logo from "@/assets/jpg/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { MdArrowDropDown } from "react-icons/md";
+
+type Menu = {
+  label: string;
+  url: string;
+  children?: Menu[];
+};
 
 function Header() {
+  const menu: Menu[] = [
+    { label: "Home", url: "/" },
+    { label: "About Us", url: "/about" },
+    { label: "Products", url: "/products" },
+    // { label: "Kis's", url: "/kids" },
+    {
+      label: "Categories",
+      url: "/products",
+      children: [
+        { label: "Mens", url: "/products" },
+        { label: "Woments", url: "/products" },
+        { label: "Kids", url: "/products" },
+      ],
+    },
+    { label: "Contact Us", url: "/contact" },
+  ];
+
+  const MenuItem = ({ menu }: { menu: Menu }) => {
+    return (
+      <li className="scroll-to-section">
+        <Link
+          className={menu.label === "Home" ? "active" : ""}
+          href={`${menu.url}`}
+        >
+          {menu.label}
+        </Link>
+      </li>
+    );
+  };
   return (
     <header className="header-area header-sticky">
       <div className="container">
@@ -14,63 +50,26 @@ function Header() {
                 <Image className="pt-3" src={Logo} alt={"logo"} title="logo" />
               </Link>
               <ul className="nav">
-                <li className="scroll-to-section">
-                  <a href="#top" className="active">
-                    Home
-                  </a>
-                </li>
-                <li className="scroll-to-section">
-                  <a href="#men">Men&apos;s</a>
-                </li>
-                <li className="scroll-to-section">
-                  <a href="#women">Women&apos;s</a>
-                </li>
-                <li className="scroll-to-section">
-                  <a href="#kids">Kid&apos;s</a>
-                </li>
-                <li className="submenu">
-                  <a href="javascript:;">Pages</a>
-                  <ul className="pl-0">
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="products.html">Products</a>
-                    </li>
-                    <li>
-                      <a href="single-product.html">Single Product</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="submenu">
-                  <a href="javascript:;">Features</a>
-                  <ul className="pl-0">
-                    <li>
-                      <a href="#">Features Page 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Features Page 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Features Page 3</a>
-                    </li>
-                    <li>
-                      <a
-                        rel="nofollow"
-                        href="https://templatemo.com/page/4"
-                        target="_blank"
-                      >
-                        Template Page 4
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="scroll-to-section">
-                  <a href="#explore">Explore</a>
-                </li>
+                {menu.map((menuItem, index) => {
+                  if (menuItem.children) {
+                    return (
+                      <li className="submenu" key={index}>
+                        <Link
+                          className="flex justify-center items-center sublink"
+                          href={menuItem.url}
+                        >
+                          <span> {menuItem.label}</span>{" "}
+                        </Link>
+                        <ul className="pl-0">
+                          {menuItem.children.map((menu, index) => (
+                            <MenuItem menu={menu} key={index} />
+                          ))}
+                        </ul>
+                      </li>
+                    );
+                  }
+                  return <MenuItem menu={menuItem} key={index} />;
+                })}
               </ul>
               <a className="menu-trigger">
                 <span>Menu</span>

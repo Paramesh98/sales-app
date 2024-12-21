@@ -6,6 +6,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/assets/css/flex-slider.css";
 import "@/assets/css/font-awesome.css";
 import "@/assets/css/owl-carousel.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +37,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
