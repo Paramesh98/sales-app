@@ -4,6 +4,7 @@ import React from "react";
 import Team from "../team";
 import Service from "@/components/service";
 import Subscription from "@/components/subscription";
+import "./styles.css";
 
 function About() {
   return (

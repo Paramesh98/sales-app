@@ -6,6 +6,7 @@ import Instagram3 from "@/assets/jpg/instagram-04.jpg";
 import Instagram4 from "@/assets/jpg/instagram-05.jpg";
 import Instagram5 from "@/assets/jpg/instagram-06.jpg";
 import Image from "next/image";
+import "./styles.css";
 
 function Social() {
   return (

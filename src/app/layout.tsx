@@ -5,7 +5,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "@/assets/css/flex-slider.css";
 import "@/assets/css/font-awesome.css";
-import "@/assets/css/owl-carousel.css";
+// import "@/assets/css/owl-carousel.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 

@@ -6,6 +6,7 @@ import RightBannerImage2 from "@/assets/jpg/baner-right-image-02.jpg";
 import RightBannerImage3 from "@/assets/jpg/baner-right-image-03.jpg";
 import RightBannerImage4 from "@/assets/jpg/baner-right-image-04.jpg";
 import Link from "next/link";
+import "./styles.css";
 
 type Category = {
   title: string;
