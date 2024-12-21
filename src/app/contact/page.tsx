@@ -1,6 +1,5 @@
 import StickyHeader from "@/components/sticky-header";
 import Subscription from "@/components/subscription";
-import React from "react";
 import "./styles.css";
 
 function Contact() {

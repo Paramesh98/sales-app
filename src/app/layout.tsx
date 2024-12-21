@@ -1,13 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 
-import "./globals.css";
-import "bootstrap/dist/css/bootstrap.css";
 import "@/assets/css/flex-slider.css";
 import "@/assets/css/font-awesome.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "./globals.css";
 // import "@/assets/css/owl-carousel.css";
-import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 // import "owl.carousel/dist/assets/owl.carousel.css";
 // import "owl.carousel/dist/assets/owl.theme.default.css";

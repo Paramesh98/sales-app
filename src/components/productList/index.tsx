@@ -1,10 +1,8 @@
-import React from "react";
 import Men1 from "@/assets/jpg/men-01.jpg";
 import Men2 from "@/assets/jpg/men-02.jpg";
 import Men3 from "@/assets/jpg/men-03.jpg";
 import Women1 from "@/assets/jpg/women-01.jpg";
 import Women2 from "@/assets/jpg/women-02.jpg";
-import Women3 from "@/assets/jpg/women-03.jpg";
 import Image from "next/image";
 
 function ProductList() {

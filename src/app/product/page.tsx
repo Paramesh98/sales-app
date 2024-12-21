@@ -1,8 +1,6 @@
-import React from "react";
 import SingleProduct from "@/assets/jpg/single-product-01.jpg";
 import SingleProduct2 from "@/assets/jpg/single-product-02.jpg";
 import Image from "next/image";
-import StickyHeader from "@/components/sticky-header";
 import "./styles.css";
 
 function Product() {

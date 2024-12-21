@@ -1,7 +1,4 @@
-import React from "react";
 import Men1 from "@/assets/jpg/men-01.jpg";
-import Men2 from "@/assets/jpg/men-02.jpg";
-import Men3 from "@/assets/jpg/men-03.jpg";
 import Image from "next/image";
 import "./styles.css";
 

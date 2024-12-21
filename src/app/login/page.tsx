@@ -1,7 +1,6 @@
-import React from "react";
-import "./styles.css";
 import LeftBannerImage from "@/assets/jpg/left-banner-image.jpg";
 import Image from "next/image";
+import "./styles.css";
 
 function Login() {
   return (

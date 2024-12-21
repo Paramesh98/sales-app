@@ -1,6 +1,6 @@
 import ProductList from "@/components/productList";
 import StickyHeader from "@/components/sticky-header";
-import React from "react";
+
 import "./styles.css";
 
 function Products() {

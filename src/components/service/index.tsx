@@ -1,4 +1,3 @@
-import React from "react";
 import Serive from "@/assets/jpg/service-01.jpg";
 import Service2 from "@/assets/jpg/service-02.jpg";
 import Service3 from "@/assets/jpg/service-03.jpg";
